@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cognifyz - Intern FRED's Sample js</title>
+</head>
+<body>
+
+  <h2>1. Change Button Color</h2>
+  <button onclick="changeColor()" id="colorBtn">Click Me</button>
+
+  <h2>2. Show Greeting</h2>
+  <button onclick="greet()">Say Hello</button>
+
+  <h2>3. Simple Calculator</h2>
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+  <button onclick="add()">Add</button>
+  <p id="result"></p>
+
+  <script>
+    
+    function changeColor() {
+      const btn = document.getElementById("colorBtn");
+      btn.style.backgroundColor = "red"
+    }
+
+    
+    function greet() {
+      const hour = new Date().getHours();
+      let greeting = "";
+
+      if (hour < 12) {
+        greeting = "Happy Morning!";
+      } 
+      else if (hour < 18) {
+        greeting = "Yummy Afternoon!";
+      } 
+      else {
+        greeting = "Relaxed Evening!";
+      }
+
+      alert(greeting);
+    }
+
+    
+    function add() {
+      const n1 = Number(document.getElementById("num1").value);
+      const n2 = Number(document.getElementById("num2").value);
+      const s = n1 + n2;
+
+      document.getElementById("result").innerText = "Result: " + s;
+    }
+  </script>
+
+</body>
+</html>
