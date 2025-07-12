@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COGNIFYZ GALLERY</title>
+  <style>
+    body {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background: #82bad1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #011f28;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 100px;
+      margin: 10px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .popup:target {
+      display: flex;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup img {
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .popup a {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: rgb(170, 130, 130);
+      text-decoration: none;
+    }
+
+    /* --- Slideshow --- */
+    .slideshow {
+      width: 80%;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 18s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%, 20%   { transform: translateX(0%); }
+      33%, 53%  { transform: translateX(-100%); }
+      66%, 100% { transform: translateX(-200%); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>welcome to Cognifyz Gallery</h2>
+  <div class="gallery">
+    <a href="#img1"><img src="https://media.licdn.com/dms/image/v2/D4D0BAQFOzUIOz1Yb-A/company-logo_200_200/company-logo_200_200/0/1687705347448/cognifyz_techonologies_logo?e=2147483647&v=beta&t=z1VmPnRtVmQGOd44Wyw0THEFdlqWx8kcjg6fQE6eA5g"></a>
+    <a href="#img2"><img src="https://cognifyz.com/wp-content/uploads/2023/12/architect-concept-illustration_114360-3422.jpg"></a>
+    <a href="#img3"><img src="https://i.ytimg.com/vi/Aeqh8DGZTf0/maxresdefault.jpg"></a>
+  </div>
+
+  <div id="img1" class="popup"><a href="#"><Canvas>picture</Canvas></a><img src="https://media.licdn.com/dms/image/v2/D4D0BAQFOzUIOz1Yb-A/company-logo_200_200/company-logo_200_200/0/1687705347448/cognifyz_techonologies_logo?e=2147483647&v=beta&t=z1VmPnRtVmQGOd44Wyw0THEFdlqWx8kcjg6fQE6eA5g"></div>
+  <div id="img2" class="popup"><a href="#"><Canvas>picture</Canvas></a><img src="https://cognifyz.com/wp-content/uploads/2023/12/architect-concept-illustration_114360-3422.jpg"></div>
+  <div id="img3" class="popup"><a href="#"><Canvas>picture</Canvas></a><img src="https://i.ytimg.com/vi/Aeqh8DGZTf0/maxresdefault.jpg"></div>
+
+  <h2>have a look at our Slideshow</h2>
+  <div class="slideshow">
+    <div class="slides">
+      <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFOzUIOz1Yb-A/company-logo_200_200/company-logo_200_200/0/1687705347448/cognifyz_techonologies_logo?e=2147483647&v=beta&t=z1VmPnRtVmQGOd44Wyw0THEFdlqWx8kcjg6fQE6eA5g">
+      <img src="https://cognifyz.com/wp-content/uploads/2023/12/architect-concept-illustration_114360-3422.jpg">
+      <img src="https://i.ytimg.com/vi/Aeqh8DGZTf0/maxresdefault.jpg">
+    </div>
+  </div>
+
+</body>
+</html>
