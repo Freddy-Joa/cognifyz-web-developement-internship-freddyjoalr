@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internship | Cognifyz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 font-sans">
+  <img src="C:\Users\louro\Downloads\gal1.jpg">
+  <header class="bg-blue-600 text-white text-center py-6">
+    <h1 class="text-2xl font-bold">Welcome to Internship</h1>
+    <p>at Cognifyz Technologies</p>
+    <p> signup and register to join it !!!</p>
+  </header>
+
+  <section class="p-4 text-center">
+    <p> 1 month hands-on internship with real projects, mentorship, and certification.</p>
+  </section>
+
+  <section class="p-4 bg-gray-100 text-center">
+    <h2 class="font-semibold mb-2">Perks\/Advantages</h2>
+    <p>Interactive Projects • Amaizing Mentors • Exciting Certificates<br>
+
+         Career-Boosting Benefits :<br>
+- Real-World Projects: You’ll work on actual industry tasks, not just simulations—great for building a strong portfolio.<br>
+- Skill Development: Gain hands-on experience in areas like web development, data science, AI/ML, and more.<br>
+- Internship Certificate: Upon successful completion, you’ll receive a certificate that adds weight to your resume.<br>
+
+
+         
+    </p>
+  </section>
+
+  <section>
+
+    <p>
+        Courses Offered :
+        - Web Development Internship<br>
+- Python & Java Internships<br>
+- C/C++ Programming Internship<br>
+- Full Stack Development<br>
+- React & Angular Internships<br>
+- NodeJS Internship<br>
+
+    </p>
+  </section>
+
+  <section class="p-4 text-center">
+    <h2 class="font-semibold mb-2">Skills Needed</h2>
+    <p>HTML • CSS • JavaScript • React (bonus)<br>
+        (or)<br>
+        Python Skills<br>
+        (or)<br>
+        C / CPP<br>
+        (or)<br>
+        angular / react / node js    </p>
+  </section>
+
+  <section class="bg-blue-600 text-white text-center p-4">
+    <a href="#" class="bg-white text-blue-600 px-4 py-2 rounded font-medium">Apply Now</a>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 p-4">
+    Contact: <a href="mailtocognifyztechnologies@gmail.com" class="text-blue-500">cognifyztechnologies@gmail.com</a><br>
+    linkedin: <a href="https://www.linkedin.com/company/cognifyz-techonologies/" class="text-blue-600">Cognifyz-likedin</a><br>
+    website : <a href="https://cognifyz.com/" class="text-blue-600">www.cognifyz.com </a><br>
+  </footer>
+
+</body>
+</html>
